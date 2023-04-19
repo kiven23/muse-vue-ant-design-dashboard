@@ -6,9 +6,9 @@
 <template>
 	<div>
 		<!-- Counter Widgets -->
-		<a-row :gutter="24">
+		<!-- <a-row :gutter="24">
 			<a-col :span="24" :lg="12" :xl="6" class="mb-24" v-for="(stat, index) in stats" :key="index">
-				<!-- Widget 1 Card -->
+			 
 				<WidgetCounter
 					:title="stat.title"
 					:value="stat.value"
@@ -17,53 +17,53 @@
 					:icon="stat.icon"
 					:status="stat.status"
 				></WidgetCounter>
-				<!-- / Widget 1 Card -->
+			 
 			</a-col>
-		</a-row>
+		</a-row> -->
 		<!-- / Counter Widgets -->
 
 		<!-- Charts -->
-		<a-row :gutter="24" type="flex" align="stretch">
+		<!-- <a-row :gutter="24" type="flex" align="stretch">
 			<a-col :span="24" :lg="10" class="mb-24">
 
-				<!-- Active Users Card -->
+				 
 				<CardBarChart></CardBarChart>
-				<!-- Active Users Card -->
+			 
 
 			</a-col>
 			<a-col :span="24" :lg="14" class="mb-24">
 				
-				<!-- Sales Overview Card -->
+			 
 				<CardLineChart></CardLineChart>
-				<!-- / Sales Overview Card -->
+			 
 
 			</a-col>
-		</a-row>
+		</a-row> -->
 		<!-- / Charts -->
 
 		<!-- Table & Timeline -->
 		<a-row :gutter="24" type="flex" align="stretch">
 			<!-- Table -->
-			<a-col :span="24" :lg="16" class="mb-24">
+			<!-- <a-col :span="24" :lg="16" class="mb-24">
 				
-				<!-- Projects Table Card -->
+			 
 				<CardProjectTable
 					:data="tableData"
 					:columns="tableColumns"
 				></CardProjectTable>
-				<!-- / Projects Table Card -->
+	 
 				
-			</a-col>
+			</a-col> -->
 			<!-- / Table -->
 
 			<!-- Timeline -->
-			<a-col :span="24" :lg="8" class="mb-24">
+			<!-- <a-col :span="24" :lg="8" class="mb-24">
 
-				<!-- Orders History Timeline Card -->
+			 
 				<CardOrderHistory></CardOrderHistory>
-				<!-- / Orders History Timeline Card -->
+				 
 
-			</a-col>
+			</a-col> -->
 			<!-- / Timeline -->
 		</a-row>
 		<!-- / Table & Timeline -->
@@ -80,7 +80,7 @@
 			<a-col :span="24" :xl="10" class="mb-24">
 
 				<!-- Information Card 2 -->
-				<CardInfo2></CardInfo2>
+				<!-- <CardInfo2></CardInfo2> -->
 				<!-- / Information Card 2 -->
 
 			</a-col>

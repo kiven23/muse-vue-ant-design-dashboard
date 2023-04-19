@@ -12,44 +12,57 @@
 			</svg>
 		</a-button>
 		<p class="text-dark">
-			Hi, I’m Alec Thompson, Decisions: If you can’t decide, the answer is no. If two equally difficult paths, choose the one more painful in the short term (pain avoidance is creating an illusion of equality).
+			{{data[0].about}}
 		</p>
 		<hr class="my-25">
 		<a-descriptions title="Oliver Liam" :column="1">
 			<a-descriptions-item label="Full Name">
-				Sarah Emily Jacob
+				{{data[0].fullname}}
 			</a-descriptions-item>
 			<a-descriptions-item label="Mobile">
-				(44) 123 1234 123
+				{{data[0].mobile}}
 			</a-descriptions-item>
 			<a-descriptions-item label="Email">
-				sarahjacob@mail.com
+				{{data[0].email}}
 			</a-descriptions-item>
-			<a-descriptions-item label="Location">
-				USA
+			<a-descriptions-item label="Branch">
+				{{data[0].branch}}
 			</a-descriptions-item>
-			<a-descriptions-item label="Social">
-				<a href="#" class="mx-5 px-5">
-					<a-icon type="twitter" style="color: #3EA1EC;" />
+			<a-descriptions-item label="Social" >
+				<span v-for="social in data[0].social" :key="social.href">
+				<a :href="social.link" class="mx-5 px-5">
+					<a-icon :type="social.icon" style="color: #3EA1EC;" />
 				</a>
-				<a href="#" class="mx-5 px-5">
-					<a-icon type="facebook" style="color: #344E86" />
-				</a>
-				<a href="#" class="mx-5 px-5">
-					<a-icon type="instagram" style="color: #E1306C" />
-				</a>
+			</span>
 			</a-descriptions-item>
+			<a-descriptions-item label="Age">
+				{{data[0].age}}
+			</a-descriptions-item>
+			<a-descriptions-item label="Job Title">
+				{{data[0].jobtitle}}
+			</a-descriptions-item>
+			<a-descriptions-item label="Address">
+				{{data[0].address}}
+			</a-descriptions-item>
+		 
 		</a-descriptions>
 	</a-card>
+	
 	<!-- / Profile Information Card -->
 
 </template>
 
 <script>
 
-	export default ({
+	export default ({ 
+		props: {
+			data: {
+				 
+			},
+		},
 		data() {
 			return {
+				profileinfo
 			}
 		},
 	})

@@ -7,7 +7,7 @@
 	<div>
 
 		<!-- Header Background Image -->
-		<div class="profile-nav-bg" style="background-image: url('images/bg-profile.jpg')"></div>
+		<div class="profile-nav-bg" style="background-image: url('images/1267627.jpg')"></div>
 		<!-- / Header Background Image -->
 
 		<!-- User Profile Card -->
@@ -15,17 +15,18 @@
 			<template #title>
 				<a-row type="flex" align="middle">
 					<a-col :span="24" :md="12" class="col-info">
-						<a-avatar :size="74" shape="square" src="images/face-1.jpg" />
+						<a-avatar :size="74" shape="square" src="images/profile.jpeg" />
 						<div class="avatar-info">
-							<h4 class="font-semibold m-0">Sarah Jacob</h4>
-							<p>CEO / Co-Founder</p>
+							<h4 class="font-semibold m-0"></h4>
+							<p>Web Developer / CEO / Trader</p>
 						</div>
 					</a-col>
 					<a-col :span="24" :md="12" style="display: flex; align-items: center; justify-content: flex-end">
 						<a-radio-group v-model="profileHeaderBtns" size="small">
-							<a-radio-button value="overview">OVERVIEW</a-radio-button>
-							<a-radio-button value="teams">TEAMS</a-radio-button>
-							<a-radio-button value="projects">PROJECTS</a-radio-button>
+						 
+							<a-radio-button value="follow" @click="follow()" v-model="fvalue">FOLLOW</a-radio-button>
+							<!-- <a-radio-button value="teams">TEAMS</a-radio-button>
+							<a-radio-button value="projects">PROJECTS</a-radio-button> -->
 						</a-radio-group>
 					</a-col>
 				</a-row>
@@ -36,35 +37,35 @@
 		<a-row type="flex" :gutter="24">
 
 			<!-- Platform Settings Column -->
-			<a-col :span="24" :md="8" class="mb-24">
+			<!-- <a-col :span="24" :md="8" class="mb-24">
 
-				<!-- Platform Settings Card -->
+				 
 				<CardPlatformSettings></CardPlatformSettings>
-				<!-- / Platform Settings Card -->
+		 
 
-			</a-col>
+			</a-col> -->
 			<!-- / Platform Settings Column -->
 
 			<!-- Profile Information Column -->
 			<a-col :span="24" :md="8" class="mb-24">
 
 				<!-- Profile Information Card -->
-				<CardProfileInformation></CardProfileInformation>
+				<CardProfileInformation :data="profileinfo"></CardProfileInformation>
 				<!-- / Profile Information Card -->
 
 			</a-col>
 			<!-- / Profile Information Column -->
 			
 			<!-- Conversations Column -->
-			<a-col :span="24" :md="8" class="mb-24">
+			<!-- <a-col :span="24" :md="8" class="mb-24">
 			
-				<!-- Conversations Card -->
+				 
 				<CardConversations
 					:data="conversationsData"
 				></CardConversations>
-				<!-- / Conversations Card -->
+			 
 
-			</a-col>
+			</a-col> -->
 			<!-- / Conversations Column -->
 
 		</a-row>
@@ -72,14 +73,14 @@
 		<!-- Projects Card -->
 		<a-card :bordered="false" class="header-solid h-full mb-24" :bodyStyle="{paddingTop: '14px'}">
 			<template #title>
-				<h6 class="font-semibold">Projects</h6>			
-				<p>Architects design houses</p>	
+				<h6 class="font-semibold">Photos</h6>			
+				<p></p>	
 			</template>
 
 			<a-row type="flex" :gutter="[24,24]" align="stretch">
 
 				<!-- Project Column -->
-				<a-col :span="24" :md="12" :xl="6" v-for="(project, index) in projects" :key="index">
+				<!-- <a-col :span="24" :md="12" :xl="6" v-for="(project, index) in projects" :key="index">
 					<CardProject
 						:id="project.id"
 						:title="project.title"
@@ -87,7 +88,7 @@
 						:cover="project.cover"
 						:team="project.team"
 					></CardProject>
-				</a-col>
+				</a-col> -->
 				<!-- / Project Column -->
 
 				<!-- Project Column -->
@@ -108,7 +109,7 @@
 							</svg>
 
 							<div class="ant-upload-text font-semibold text-dark">
-								Upload New Project
+								Upload New Photos
 							</div>
 						</div>
 					</a-upload>
@@ -164,7 +165,20 @@
 			avatar: "images/face-2.jpg",
 		},
 	] ;
+    const profileinfo = [
+		{
+			fullname: 'Stevefox Linux',
+			mobile: '09152212673',
+			email: 'stevefoxlinux@gmail.com',
+			branch: 'Addessa Main',
+			social: [{ icon: 'twitter' , link: 'twitter.com' },{ icon: 'facebook' , link: 'facebook.com' }],
+			age: 27,
+			jobtitle: 'Python Programmer',
+			address: 'Domanpot Asingan Pangasinan',
+			about: 'Hi Am Steven but you call me Stevefox or Linux Im a fullstack Developer almost 3 year at Addessa'
 
+		}
+	]
 	// Project cards data
 	const projects = [
 		{
@@ -222,6 +236,14 @@
 
 				// Project cards data
 				projects,
+				fvalue: 1,
+				profileinfo
+			}
+		},
+		methods: {
+			follow(){
+				this.fvalue = 2
+				alert(this.fvalue)
 			}
 		},
 	})

@@ -56,8 +56,8 @@
 		
 		<!-- Copyright Notice -->
 		<p class="copyright">
-			Copyright © 2021 Muse
-			by <a href="https://creative-tim.com">Creative Tim</a>.
+			Copyright © 2023 Portal
+			by <a href="https://github.com/kiven23">Stevefox_Linux</a>.
 		</p>
 		<!-- / Copyright Notice -->
 

@@ -3,7 +3,7 @@
 	<!-- Layout Header ( Navbar ) -->
 	<a-layout-header>
 		<div class="header-col header-brand">
-			<h6>Muse Dashboard</h6>
+			<h6>WebPortalAI</h6>
 
 			<!-- Trigger Button For Navigation Menu For Small Screens -->
 			<a-button type="link" @click="collapseNav = collapseNav ? 0 : 1 " class="btn-menu-trigger">
@@ -42,7 +42,7 @@
 						<span>Sign In</span>
 					</router-link>
 				</a-menu-item>
-				<a-menu-item>
+				<!-- <a-menu-item>
 					<router-link to="/sign-up" class="nav-link" @click="e => e.preventDefault()">
 						<svg width="14px" height="14px" class="fill-muted" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 							<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -60,7 +60,7 @@
 						</svg>
 						<span>Sign Up</span>
 					</router-link>
-				</a-menu-item>
+				</a-menu-item> -->
 			</a-menu>
 			<!-- / Navigation Menu For Large Screens -->
 
@@ -99,7 +99,7 @@
 									<span>Sign In</span>
 								</router-link>
 							</a-menu-item>
-							<a-menu-item>
+							<!-- <a-menu-item>
 								<router-link to="/sign-up" class="nav-link" @click="e => e.preventDefault()">
 									<svg width="20" height="20" class="fill-muted" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 										<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -117,7 +117,7 @@
 									</svg>
 									<span>Sign Up</span>
 								</router-link>
-							</a-menu-item>
+							</a-menu-item> -->
 						</a-menu>
 						<!-- / Navigation Menu For Small Screens -->
 
@@ -129,9 +129,9 @@
 			<!-- / Collapsible Navigation Menu For Small Screens -->
 
 		</div>
-		<div class="header-col header-btn">
+		<!-- <div class="header-col header-btn">
 			<a-button href="https://www.creative-tim.com/product/muse-vue-ant-design-dashboard" target="_blank" type="primary" shape="round">FREE DOWNLOAD</a-button>
-		</div>
+		</div> -->
 	</a-layout-header>
 	<!-- / Layout Header ( Navbar ) -->
 

@@ -51,15 +51,15 @@
 				<h6>Navbar Fixed</h6>
 				<a-switch default-checked v-model="navbarFixedModel" @change="$emit('toggleNavbarPosition', navbarFixedModel)" />
 			</div>
-			<div class="download">
+			<!-- <div class="download">
 				<a-button type="dark" href="https://www.creative-tim.com/product/muse-vue-ant-design-dashboard" block target="_blank">FREE DOWNLOAD</a-button>
 				<a-button type="primary" href="https://www.creative-tim.com/product/muse-vue-ant-design-dashboard-pro" block target="_blank">UPGRADE TO PRO</a-button>
 				<a-button type="secondary" href="https://demos.creative-tim.com/muse-vue-ant-design-dashboard/documentation" block target="_blank">VIEW DOCUMENTATION</a-button>
-			</div>
-			<div class="github-stars">
+			</div> -->
+			<!-- <div class="github-stars">
 				<gh-btns-star slug="creativetimofficial/muse-vue-ant-design-dashboard" show-count></gh-btns-star>
-			</div>
-			<div class="sharing">
+			</div> -->
+			<!-- <div class="sharing">
 				<h6>Thank you for sharing!</h6>
 				<div class="share-links">
 					<a-button type="dark" target="_blank" href="https://twitter.com/intent/tweet?url=https://www.creative-tim.com/product/muse-vue-ant-design-dashboard&text=Check%20Muse%20Vue%20Ant%20Design%20made%20by%20@CreativeTim%20#webdesign%20#dashboard%20#antdesign%20#vue%20https://www.creative-tim.com/product/muse-vue-ant-design-dashboard" size="small">
@@ -71,7 +71,7 @@
 						SHARE
 					</a-button>
 				</div>
-			</div>
+			</div> -->
 		</div>
 		<!-- / Settings Drawer Content -->
 
